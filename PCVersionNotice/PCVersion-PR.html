@@ -1,0 +1,58 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<LINK REL="stylesheet" HREF="../style.css" TYPE="text/css">
+<title>AVISO IMPORTANTE</title>
+<script language="JavaScript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+
+function change(num){
+ if(num==0)
+   opener.window.location="../Manual/ns500-Type4_PR.html"
+}
+
+function showPage(){
+close();
+}
+// -->
+</script>
+</head>
+
+<body style="font-family:Arial; color:#FF6600" topmargin="25" leftmargin="25" rightmargin="25" onload="FP_preloadImgs(/*url*/'button25.jpg',/*url*/'button26.jpg')">
+
+<p align="center" class="important-t">AVISO IMPORTANTE</p>
+<p align="left" class="important-b">O conte&uacute;do desse manual aplica-se aos PABXs com uma vers&atilde;o de software determinada, tal como se indica na capa deste manual.<br>
+Para confirmar a versão do software do seu PABX, acesse Exibição em lista (List View) na Tela inicial (Home Screen) no Console de manutenção via Web. Para obter detalhes sobre a Exibição em lista (List View) e a Tela inicial (Home Screen), consulte o seguinte manual:<BR><BR>
+PC Programming Manual:<BR>
+<b>3.1 Home Screen</b>
+</p>
+<p align="left">&nbsp;</p>
+<p align="center"><a href="javascript:void(0)" onClick="change(0)">
+<img border="0" id="img1" src="button24.jpg" height="21" width="105" alt="OK" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'button25.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'button24.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'button26.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'button25.jpg')"
+onClick="showPage()"
+ fp-style="fp-btn: Glass Capsule 4; fp-font: Arial; fp-font-style: Bold; fp-font-size: 10; fp-font-color-hover: #FF6600; fp-font-color-press: #FFFFFF" fp-title="OK"></a></p>
+
+</body>
+
+</html>
